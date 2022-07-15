@@ -1,0 +1,6 @@
+.header__list {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+}

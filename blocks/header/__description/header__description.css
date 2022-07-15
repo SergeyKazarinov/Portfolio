@@ -1,0 +1,10 @@
+.header__description {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: 1s;
+}
+
+.sticky .header__description {
+  opacity: 0;
+}

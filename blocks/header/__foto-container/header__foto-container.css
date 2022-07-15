@@ -1,0 +1,13 @@
+.header__foto-container {
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 300px 70px #2a3030;
+  border-radius: 20px;
+  opacity: 1;
+  transition: 1s;
+}
+
+.sticky .header__foto-container {
+  opacity: 0;
+}
