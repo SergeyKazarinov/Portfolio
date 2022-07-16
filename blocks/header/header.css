@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../Images/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 50px 50px #363636;
+}

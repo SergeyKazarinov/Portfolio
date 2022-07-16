@@ -1,0 +1,10 @@
+.header__photo {
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 1s;
+}
+
+.sticky .header__photo {
+  opacity: 0;
+}
