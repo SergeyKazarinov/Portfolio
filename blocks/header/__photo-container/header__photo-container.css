@@ -13,7 +13,7 @@
   }
 }
 
-.header__foto-container {
+.header__photo-container {
   width: 500px;
   height: 700px;
   overflow: hidden;
@@ -22,6 +22,6 @@
   transition: .7s;
 }
 
-.sticky .header__foto-container {
+.sticky .header__photo-container {
   transform: translateY(-250px);
 }

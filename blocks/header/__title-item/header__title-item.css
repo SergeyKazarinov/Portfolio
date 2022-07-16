@@ -13,9 +13,10 @@
 }
 
 .header__title-item {
+  cursor: pointer;
   display: inline-block;
   opacity: 0;
-  animation: animate 2s linear forwards;
+  animation: animate 2s ease-in-out forwards;
 }
 
 .header__title-item:nth-child(2) {
