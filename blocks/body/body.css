@@ -4,5 +4,7 @@
   min-height: 110vh;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: #363636;
+  background-image: url('../../images/backgournd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
