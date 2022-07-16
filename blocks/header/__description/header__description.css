@@ -1,8 +1,21 @@
+@keyframes shadow {
+  0% {
+    filter: drop-shadow(0 0 0 white);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px white);
+  }
+  100% {
+    filter: drop-shadow(0 0 0 white);
+  }
+}
+
 .header__description {
   display: flex;
   flex-direction: column;
   opacity: 1;
   transition: 1s;
+  animation: shadow 1s 3s linear;
 }
 
 .sticky .header__description {
