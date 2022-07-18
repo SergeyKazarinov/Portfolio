@@ -27,5 +27,5 @@
 
 .header__title-item_active {
   opacity: 1;
-  animation: smoke 2s ease-in-out forwards;
+  animation: smoke 3s ease-in-out forwards;
 }

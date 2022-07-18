@@ -60,20 +60,104 @@
       <ul class="list header__list">
         <li class="header__item"><a class="link header__link" href="#">HOME</a></li>
         <li class="header__item"><a class="link header__link" href="#">ABOUT</a></li>
-        <li class="header__item"><a class="link header__link" href="#">PROJECTS</a></li>
+        <li class="header__item"><a class="link header__link" href="#projects">PROJECTS</a></li>
         <li class="header__item"><a class="link header__link" href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <main class="main">
     <section class="projects">
-      
+      <h2 class="title projects__title" id="projects">Мои проекты</h2>
+      <div class="project__flex-container">
+        <ul class="list project__list">
+          <li class="project__item">
+            <a class="link projects__link" href="https://github.com/SergeyKazarinov/Lubimovka" target="_blank">
+              <img class="projects__scrin" src="./Images/Lubimovka.JPG">
+            </a>
+            <h3 class="projects__name">Любимовка</h3>
+          </li>
+          <li class="project__item">
+            <a class="link projects__link" href="https://github.com/SergeyKazarinov/Mesto" target="_blank">
+              <img class="projects__scrin" src="./Images/Mesto.JPG">
+            </a>
+            <h3 class="projects__name">Mesto</h3>
+          </li>
+          <li class="project__item">
+            <a class="link projects__link" href="https://github.com/SergeyKazarinov/russian-travel" target="_blank">
+              <img class="projects__scrin" src="./Images/RussianTravel.JPG">
+            </a>
+            <h3 class="projects__name">Путешествие по России</h3>
+          </li>
+          <li class="project__item">
+            <a class="link projects__link" href="https://github.com/SergeyKazarinov/how-to-learn" target="_blank">
+              <img class="projects__scrin" src="./Images/HowToLearn.JPG">
+            </a>
+            <h3 class="projects__name">Начать учиться</h3>
+          </li>
+          <li class="project__item">
+            <a class="link projects__link" href="https://github.com/SergeyKazarinov/Mesto" target="_blank">
+              <img class="projects__scrin" src="./Images/Mesto.JPG">
+            </a>
+            <h3 class="projects__name">Любимовка</h3>
+          </li>
+        </ul>
+        <div class="project__description-container">
+          <p class="title project__description">
+            Проекты реализованы во время обучения на курсе Web-разработчки Яндекс.Практикум, 
+            а также дополнительные релевантные проекты, которые не входят в программу курска.
+          </p>
+          <!-- <p class="projects__description">
+            Фестиваль молодой драматургии Любимовка - это независимый некоммерческий коллективный проект российских драматургов.
+          </p> -->
+          <ul class="list projects__stack">
+            <li class="projects__stack-item">CCS3 (Flexbox Layout, Grid Layout, Animation, keyframes)</li>
+            <li class="projects__stack-item">HTML</li>
+            <li class="projects__stack-item">BEM</li>
+            <li class="projects__stack-item">BEM Nested</li>
+            <li class="projects__stack-item">JS</li>
+            <li class="projects__stack-item">Github (Pull Request)</li>
+            <li class="projects__stack-item">Figma</li>
+            <li class="projects__stack-item">Asana</li>
+          </ul>
+
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
 
   </footer>
 
-  <script src="./pages/index.js"></script>
+
+
+  <template id="project">
+    <li class="project__item">
+      <a class="link projects__link" href="https://github.com/SergeyKazarinov/Lubimovka" target="_blank">
+        <img class="projects__scrin" src="./Images/Lubimovka.JPG">
+      </a>
+      <h3 class="projects__name">Любимовка</h3>
+    </li>
+  </template>
+  
+  <template id="description">
+    <p class="title project__description">
+      Проекты реализованы во время обучения на курсе Web-разработчки Яндекс.Практикум, 
+      а также дополнительные релевантные проекты, которые не входят в программу курска.
+    </p>
+    <!-- <p class="projects__description">
+      Фестиваль молодой драматургии Любимовка - это независимый некоммерческий коллективный проект российских драматургов.
+    </p> -->
+    <ul class="list projects__stack">
+      <li class="projects__stack-item">CCS3 (Flexbox Layout, Grid Layout, Animation, keyframes)</li>
+      <li class="projects__stack-item">HTML</li>
+      <li class="projects__stack-item">BEM</li>
+      <li class="projects__stack-item">BEM Nested</li>
+      <li class="projects__stack-item">JS</li>
+      <li class="projects__stack-item">Github (Pull Request)</li>
+      <li class="projects__stack-item">Figma</li>
+      <li class="projects__stack-item">Asana</li>
+    </ul>
+  </template>
+  <script src="./pages/index.js" type="module"></script>
 </body>
 </html>

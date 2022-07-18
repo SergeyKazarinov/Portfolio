@@ -1,0 +1,7 @@
+.projects__stack-item {
+  min-width: 50px;
+  border: 1px solid #fff;
+  padding: 0 5px;
+  font-size: 20px;
+  text-align: center;
+}
