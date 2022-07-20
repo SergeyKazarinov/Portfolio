@@ -1,8 +1,27 @@
 import {initialProjects,
   header,
   lettersHeader,
+  projectListSelector,
+  projectTemplate,
 } from '../utils/constants.js';
+import {Section} from '../components/Section.js';
+import {Project} from '../components/Project.js';
 
+/**
+ * Функция сборки проекта
+ * @param {Array} data - массив объектов с данными проектов 
+ * @returns возвращает готовый проект для вставки в HTML
+ */
+const createProject = (data) => {
+  const projectList = new Project (data, projectTemplate);
+  return projectList.generateProject();
+}
+
+/**
+ * @const projectContainerList - экземпляр класса для встави готового проетка в DOM-узел
+ */
+const projectContainerList = new Section (initialProjects, createProject, projectListSelector);
+projectContainerList.renderItems();
 
 /**
  * событие прокручивания страницы для преобразования блока header
@@ -23,20 +42,3 @@ for(let i = 0; i<lettersHeader.length; i++) {
     }, 2000);
   })
 }
-
-const projectItems = document.querySelectorAll('.project__item');
-const projectDescription = document.querySelector('.project__description');
-
-Array.from(projectItems).forEach(item => {
-  item.addEventListener('mouseover', () => {
-    // projectDescription.classList.add('project__description_inactive');
-    projectDescription.textContent = 'Фестиваль молодой драматургии Любимовка - это независимый некоммерческий коллективный проект российских драматургов. Проект создавался в команде 6 Frontend-разработчиков';
-  })
-
-  item.addEventListener('mouseout', () => {
-    setTimeout(() => {
-      projectDescription.textContent = 'Проекты реализованы во время обучения на курсе Web-разработчки Яндекс.Практикум, а также дополнительные релевантные проекты, которые не входят в программу курска.';
-    }, 300)
-    
-  })
-})
