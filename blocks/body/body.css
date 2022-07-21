@@ -3,8 +3,10 @@
   max-width: 1440px;
   min-height: 110vh;
   margin: 0 auto;
+  padding: 0 50px;
   box-sizing: border-box;
   background-image: url('../../images/backgournd.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }

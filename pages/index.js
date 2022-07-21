@@ -1,11 +1,27 @@
+import {initialProjects,
+  header,
+  lettersHeader,
+  projectListSelector,
+  projectTemplate,
+} from '../utils/constants.js';
+import {Section} from '../components/Section.js';
+import {Project} from '../components/Project.js';
+
 /**
- * @const header - блок header
+ * Функция сборки проекта
+ * @param {Array} data - массив объектов с данными проектов 
+ * @returns возвращает готовый проект для вставки в HTML
  */
-const header = document.querySelector('.header');
+const createProject = (data) => {
+  const projectList = new Project (data, projectTemplate);
+  return projectList.generateProject();
+}
+
 /**
- * @const leters - элементы span, буквы заголовка шапки
+ * @const projectContainerList - экземпляр класса для встави готового проетка в DOM-узел
  */
-const letters = document.querySelectorAll('.header__title-item');
+const projectContainerList = new Section (initialProjects, createProject, projectListSelector);
+projectContainerList.renderItems();
 
 /**
  * событие прокручивания страницы для преобразования блока header
@@ -17,8 +33,12 @@ window.addEventListener('scroll', () => {
 /**
  * Эффект дыма для букв заголовка шапки
  */
-for(let i = 0; i<letters.length; i++) {
-  letters[i].addEventListener('mouseover', () => {
-    letters[i].classList.toggle('header__title-item_active')
+for(let i = 0; i<lettersHeader.length; i++) {
+  lettersHeader[i].addEventListener('mouseover', () => {
+    lettersHeader[i].classList.add('header__title-item_active')
+
+    setTimeout(() => {
+      lettersHeader[i].classList.remove('header__title-item_active');
+    }, 2000);
   })
 }

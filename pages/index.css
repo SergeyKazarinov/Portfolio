@@ -16,7 +16,24 @@
 @import url(../blocks/header/__list/header__list.css);
 @import url(../blocks/header/__logo/header__logo.css);
 
+/* projects */
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__flex-container/project__flex-container.css);
+@import url(../blocks/projects/__title/projects__title.css);
+@import url(../blocks/projects/__list/project__list.css);
+@import url(../blocks/projects/__item/project__item.css);
+@import url(../blocks/projects/__name/projects__name.css);
+@import url(../blocks/projects/__description-container/project__description-container.css);
+@import url(../blocks/projects/__description/project__description.css);
+@import url(../blocks/projects/__description/_inactive/project__description_inactive.css);
+@import url(../blocks/projects/__stack/projects__stack.css);
+@import url(../blocks/projects/__stack-item/projects__stack-item.css);
+@import url(../blocks/projects/__link/projects__link.css);
+@import url(../blocks/projects/__scrin/projects__scrin.css);
+
+
 /*mix classes*/
 @import url(../blocks/link/link.css);
 @import url(../blocks/title/title.css);
 @import url(../blocks/list/list.css);
+@import url(../blocks/animation/__show-from-left/animation__show-form-left.css);

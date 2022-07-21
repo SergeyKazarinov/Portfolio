@@ -11,5 +11,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 50px 50px #363636;
+  box-shadow: 0 0 100px 30px #363636;
+  z-index: 2;
 }

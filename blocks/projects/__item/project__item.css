@@ -1,0 +1,11 @@
+.project__item {
+  max-height: 80px;
+  /* max-width: 500px; */
+  z-index: 1;
+  transition: .5s;
+  overflow: hidden;
+}
+
+.project__item:hover {
+  max-height: 230px;
+}

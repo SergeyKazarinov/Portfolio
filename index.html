@@ -60,20 +60,47 @@
       <ul class="list header__list">
         <li class="header__item"><a class="link header__link" href="#">HOME</a></li>
         <li class="header__item"><a class="link header__link" href="#">ABOUT</a></li>
-        <li class="header__item"><a class="link header__link" href="#">PROJECTS</a></li>
+        <li class="header__item"><a class="link header__link" href="#projects">PROJECTS</a></li>
         <li class="header__item"><a class="link header__link" href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <main class="main">
     <section class="projects">
-      
+      <h2 class="title projects__title" id="projects">Мои проекты</h2>
+      <div class="project__flex-container">
+        <ul class="list project__list">
+
+        </ul>
+        <div class="project__description-container">
+          <p class="title project__description">
+            Проекты реализованы во время обучения на курсе Web-разработчки Яндекс.Практикум, 
+            а также дополнительные релевантные проекты, которые не входят в программу курска.
+          </p>
+
+          <ul class="list projects__stack">
+
+          </ul>
+
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
 
   </footer>
 
-  <script src="./pages/index.js"></script>
+
+
+  <template id="project">
+    <li class="project__item">
+      <!-- <h3 class="projects__name">Любимовка</h3> -->
+      <a class="link projects__link" href="https://github.com/SergeyKazarinov/Lubimovka" target="_blank">
+        <img class="projects__scrin" src="./Images/Lubimovka.JPG">
+      </a>
+
+    </li>
+  </template>
+  <script src="./pages/index.js" type="module"></script>
 </body>
 </html>

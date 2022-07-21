@@ -1,0 +1,14 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+    /* transform: translateX(1000px); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+}
+
+.animation__show-from-left {
+  animation: show 1s;
+}
