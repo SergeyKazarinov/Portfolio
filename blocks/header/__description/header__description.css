@@ -15,7 +15,7 @@
   flex-direction: column;
   opacity: 1;
   transition: 1s;
-  animation: shadow 1s 3s linear;
+  animation: shadow 1s 3.5s linear;
 }
 
 .sticky .header__description {

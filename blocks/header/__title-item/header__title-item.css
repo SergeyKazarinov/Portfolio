@@ -1,12 +1,12 @@
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: rotateY(90deg);
+    transform: scale(8) translateZ(-500px) rotateY(720deg);
     filter: blur(5px);
   }
   100% {
     opacity: 1;
-    transform: rotateY(0deg);
+    transform: scale(1) translateZ(0) rotateY(0deg);
     filter: blur(0);
     filter: drop-shadow(0 0 0 white);
   }

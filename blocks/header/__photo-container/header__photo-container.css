@@ -14,14 +14,16 @@
 }
 
 .header__photo-container {
-  width: 500px;
+  position: relative;
+  width: 400px;
   height: 700px;
-  overflow: hidden;
+  /* overflow: hidden; */
+  align-self: flex-end;
   animation: photo 4s cubic-bezier(.1,.58,.67,.97);
   transform: translateY(0px);
   transition: .7s;
 }
 
 .sticky .header__photo-container {
-  transform: translateY(-250px);
+  /* transform: translateY(-250px); */
 }

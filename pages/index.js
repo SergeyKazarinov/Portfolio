@@ -3,9 +3,11 @@ import {initialProjects,
   lettersHeader,
   projectListSelector,
   projectTemplate,
+  aboutDescriptionSelector,
 } from '../utils/constants.js';
 import {Section} from '../components/Section.js';
 import {Project} from '../components/Project.js';
+import { ReplaceText } from '../components/replaceText.js';
 
 /**
  * Функция сборки проекта
@@ -28,6 +30,9 @@ projectContainerList.renderItems();
  */
 window.addEventListener('scroll', () => {
   header.classList.toggle('sticky', window.scrollY > 0);
+  // if (!window.scrollY > 0) {
+  //   document.addEventListener('scroll', activeAnimationText);
+  // };
 })
 
 /**
@@ -42,3 +47,58 @@ for(let i = 0; i<lettersHeader.length; i++) {
     }, 2000);
   })
 }
+
+/**
+ * Плавная прокрутка по якорным сслыкам
+ */
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', (event) => {
+    event.preventDefault();
+    const blockID = anchor.getAttribute('href');
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: 'smooth', 
+      block: 'end'
+    });
+  })
+}
+
+//Анимация текста в секции about
+// const animationText = new ReplaceText (aboutDescriptionSelector);
+
+// animationText.replaceText();
+
+// const animation = anime.timeline({
+//   targets : `.${aboutDescriptionSelector} span`,
+//   easeing : 'easeInOutExpo',
+//   loop : false,
+// });
+
+
+
+// const activeAnimationText = () => {
+//   animation.add({
+//     rotate : () => {
+//       return anime.random(-360,360)
+//     },
+//     translateX : () => {
+//       return anime.random(-500,500)
+//     },
+//     translateY : () => {
+//       return anime.random(-500,500)
+//     },
+//     duration : 500,
+//     delay : anime.stagger(1),
+//   })
+//   if(window.scrollY > 0) {
+//     animation.add({
+//       rotate : 0,
+//       translateX : 0,
+//       translateY : 0,
+//       duration : 5000,
+//       delay : anime.stagger(20),
+//     })
+//     document.removeEventListener('scroll', activeAnimationText);
+//   }
+// }

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -53,24 +54,54 @@
       </h2>
     </div>
     <div class="header__photo-container">
+      <img class="header__photo-phone" src="./Images/phone.png" alt="">
+      <img class="header__photo-background" src="./Images/phone-background.jpg">
       <img class="header__photo" src="./images/Без имени-1.png" alt="Фотография">
     </div>
     <nav class="header__navigation">
       <a class= "link header__logo" href="#">Серегй Казаринов</a>
       <ul class="list header__list">
         <li class="header__item"><a class="link header__link" href="#">HOME</a></li>
-        <li class="header__item"><a class="link header__link" href="#">ABOUT</a></li>
+        <li class="header__item"><a class="link header__link" href="#about">ABOUT</a></li>
         <li class="header__item"><a class="link header__link" href="#projects">PROJECTS</a></li>
         <li class="header__item"><a class="link header__link" href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
+
   <main class="main">
-    <section class="projects">
-      <h2 class="title projects__title" id="projects">Мои проекты</h2>
+    <section class="about">
+      <h2 class="about__title" id="about">Обо мне</h2>
+      <p class="about__description">
+        Привет, меня зовут Сергей.
+        В 2014 закончил Пермский Государственный Национальный Исследовательский Университет по специальности "Химия".
+        В настоящее время прохожу обучение на веб-разработчика на Яндекс.Практикуме.
+        Параллельно с учебой работаю на freelance.
+      </p>
+      <h3 class="title about__subtitle">Hard Skills</h3>
+      <ul class="list about__list">
+        <li class="about__item"><h3 class="title about__stack">HTML5</h3></li>
+        <li class="about__item"><h3 class="title about__stack">CSS3</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Sass</h3></li>
+        <li class="about__item"><h3 class="title about__stack">JavaScript</h3></li>
+        <li class="about__item"><h3 class="title about__stack">OOP</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Node.js</h3></li>
+        <li class="about__item"><h3 class="title about__stack">React</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Webpack</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Git</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Figma</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Api</h3></li>
+        <li class="about__item"><h3 class="title about__stack">BEM</h3></li>
+        <li class="about__item"><h3 class="title about__stack">JSON</h3></li>
+        <li class="about__item"><h3 class="title about__stack">Pixel Perfect</h3></li>
+      </ul>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="title projects__title">Мои проекты</h2>
       <div class="project__flex-container">
         <ul class="list project__list">
-
+          <!--блок для вставки template проектов-->
         </ul>
         <div class="project__description-container">
           <p class="title project__description">
@@ -79,7 +110,7 @@
           </p>
 
           <ul class="list projects__stack">
-
+            <!--блок для вставки стэка из JS-->
           </ul>
 
         </div>
@@ -101,6 +132,7 @@
 
     </li>
   </template>
+  <script src="./utils/anime.min.js"></script>
   <script src="./pages/index.js" type="module"></script>
 </body>
 </html>

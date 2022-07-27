@@ -11,10 +11,24 @@
 @import url(../blocks//header/__title-item/_active/header__title-item_active.css);
 @import url(../blocks/header/__backgournd/header__backgournd.css);
 @import url(../blocks/header/__photo-container/header__photo-container.css);
+@import url(../blocks/header/__photo-phone/header__photo-phone.css);
+@import url(../blocks/header/__photo-background/header__photo-background.css);
 @import url(../blocks/header/__photo/header__photo.css);
 @import url(../blocks/header/__navigation/header__navigation.css);
 @import url(../blocks/header/__list/header__list.css);
 @import url(../blocks/header/__logo/header__logo.css);
+
+/* main */
+@import url(../blocks/main/main.css);
+
+/* about */
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__description/about__description.css);
+@import url(../blocks/about/__list/about__list.css);
+@import url(../blocks/about/__item/about__item.css);
+@import url(../blocks/about/__stack/about__stack.css);
+
 
 /* projects */
 @import url(../blocks/projects/projects.css);

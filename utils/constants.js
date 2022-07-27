@@ -57,3 +57,8 @@ export const projectTemplate = document.querySelector('#project').content.queryS
   */
 export const projectListSelector = 'project__list';
 
+/**
+  * @const aboutDescriptionSelector - селектор блока текса с описанием
+  * @type {string}
+  */
+export const aboutDescriptionSelector = 'about__description';

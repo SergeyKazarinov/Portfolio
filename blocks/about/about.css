@@ -1,0 +1,10 @@
+.about {
+  padding-top: 200px;
+  min-height: 150vh;
+  /* width: 100vw; */
+  background-image: url('../../Images/about.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 200px 200px;
+  background-color: #000;
+}

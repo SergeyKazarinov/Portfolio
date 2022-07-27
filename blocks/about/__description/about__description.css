@@ -1,0 +1,11 @@
+.about__description {
+  max-width: 800px;
+  padding: 0 50px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.about__description span {
+  position: relative;
+  display: inline-block;
+}
