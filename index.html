@@ -73,27 +73,17 @@
     <section class="about">
       <h2 class="about__title" id="about">Обо мне</h2>
       <p class="about__description">
-        Привет, меня зовут Сергей.
+        Привет, меня зовут Сергей, рад видеть тебя на моей странице!
         В 2014 закончил Пермский Государственный Национальный Исследовательский Университет по специальности "Химия".
         В настоящее время прохожу обучение на веб-разработчика на Яндекс.Практикуме.
+        Выбрал web-разработку, так как сразу вижу результат своей работы, 
+        а также могу постоянно развиваться, как специалист, улучшать свои навыки и изучать новое.
+        Дополнительно изучаю материалы по вер-разработке на различных платформах и сайтах.
         Параллельно с учебой работаю на freelance.
       </p>
-      <h3 class="title about__subtitle">Hard Skills</h3>
+      <h3 class="about__subtitle title">Hard Skills</h3>
       <ul class="list about__list">
-        <li class="about__item"><h3 class="title about__stack">HTML5</h3></li>
-        <li class="about__item"><h3 class="title about__stack">CSS3</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Sass</h3></li>
-        <li class="about__item"><h3 class="title about__stack">JavaScript</h3></li>
-        <li class="about__item"><h3 class="title about__stack">OOP</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Node.js</h3></li>
-        <li class="about__item"><h3 class="title about__stack">React</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Webpack</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Git</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Figma</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Api</h3></li>
-        <li class="about__item"><h3 class="title about__stack">BEM</h3></li>
-        <li class="about__item"><h3 class="title about__stack">JSON</h3></li>
-        <li class="about__item"><h3 class="title about__stack">Pixel Perfect</h3></li>
+          <!--блок для вставки template hardSkills-->
       </ul>
     </section>
 
@@ -129,9 +119,14 @@
       <a class="link projects__link" href="https://github.com/SergeyKazarinov/Lubimovka" target="_blank">
         <img class="projects__scrin" src="./Images/Lubimovka.JPG">
       </a>
-
     </li>
   </template>
+
+  <template id="hardSkills">
+      <li class="about__item"><h3 class="title about__stack"></h3></li>
+  </template>
+
+
   <script src="./utils/anime.min.js"></script>
   <script src="./pages/index.js" type="module"></script>
 </body>

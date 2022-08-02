@@ -3,10 +3,14 @@ import {initialProjects,
   lettersHeader,
   projectListSelector,
   projectTemplate,
+  hardSkillsTemplate,
   aboutDescriptionSelector,
+  hardSkills,
+  hardSkillsListSelector,
 } from '../utils/constants.js';
 import {Section} from '../components/Section.js';
 import {Project} from '../components/Project.js';
+import { HardSkills } from '../components/HardSkills.js';
 import { ReplaceText } from '../components/replaceText.js';
 
 /**
@@ -20,10 +24,27 @@ const createProject = (data) => {
 }
 
 /**
- * @const projectContainerList - экземпляр класса для встави готового проетка в DOM-узел
+ * Функция сборки проекта
+ * @param {Array} data - массив объектов с данными hardSkills 
+ * @returns возвращает готовый проект для вставки в HTML
+ */
+const createHardSkills = (data) => {
+  const hardSkillsList = new HardSkills (data, hardSkillsTemplate);
+  return hardSkillsList.generateProject();
+}
+
+/**
+ * @const projectContainerList - экземпляр класса для встави готовых проетков в DOM-узел
  */
 const projectContainerList = new Section (initialProjects, createProject, projectListSelector);
 projectContainerList.renderItems();
+
+
+/**
+ * @const projectContainerList - экземпляр класса для встави hardSkills
+ */
+const hardSkillsContainerList = new Section (hardSkills, createHardSkills, hardSkillsListSelector);
+hardSkillsContainerList.renderItems();
 
 /**
  * событие прокручивания страницы для преобразования блока header
