@@ -1,11 +1,17 @@
 .project__item {
-  max-height: 80px;
-  /* max-width: 500px; */
-  z-index: 1;
+  max-height: 100px;
   transition: .5s;
-  overflow: hidden;
+  transform: rotateY(35deg) rotateX(35deg) scale(.9);
+}
+
+.project__item:last-child {
+  max-height: 150px;
 }
 
 .project__item:hover {
-  max-height: 230px;
+  max-height: 240px;
+  transform: rotateY(0deg) rotateX(0deg) scale(1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, .4),
+              0 0 25px rgba(255, 255, 255, .4),
+              0 0 50px rgba(255, 255, 255, .4);
 }
