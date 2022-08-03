@@ -2,7 +2,7 @@
   position: relative;
   max-height: 100px;
   transition: .5s;
-  transform: rotateY(35deg) rotateX(35deg) scale(.9);
+  transform: rotateY(40deg) rotateX(25deg) scale(.9);
 }
 
 .project__item:last-child {

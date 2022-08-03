@@ -84,6 +84,30 @@ export const hardSkills = [
 ]
 
 /**
+ * @const validConfig                       - объект данных для валидации формы
+ * @property {string} formSelector          - CSS-класс формы
+ * @property {string} inputSelector         - CSS-класс инпута
+ * @property {string} submitButtonSelector  - CSS-класс кнопки отправки формы
+ * @property {string} inactiveButtonClass   - CSS-класс для деактивации кнопки
+ * @property {string} inputErrorClass       - CSS-класс для добавления свойст невалидности инпута
+ * @property {string} errorClass            - CSS-класс для вывода сообщения ошибки
+ */
+export const validConfiguration = {
+  formSelector: 'form',
+  inputSelector: 'form__input',
+  submitButtonSelector: 'button_type_submit',
+  inactiveButtonClass: 'button_inactive',
+  inputErrorClass: 'form__input_type_error',
+  errorMessage: 'form__input-error_active',
+};
+
+/**
+ * @const formContact - форма для отравки сообщения
+ * @type {DOMElement}
+ */
+export const formContact = document.querySelector('.contact__form');
+
+/**
  * @const header - блок header
  * @type {HTMLElement}
  */
@@ -125,3 +149,9 @@ export const hardSkillsListSelector = 'about__list';
   * @type {string}
   */
 export const aboutDescriptionSelector = 'about__description';
+
+/**
+  * @const submitButton - кнопка отправки сообщения
+  * @type {DONElement}
+  */
+export const submitButton = document.querySelector('.button_type_submit');

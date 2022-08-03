@@ -3,7 +3,7 @@
   background-color: rgba(5, 5, 6, .3);
   border: 2px solid #1f52eb;
   border-radius: 5px;
-  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.4) inset;
   background: linear-gradient(#1f74eb, #3880f4 48%, #0212ea 52%, #371feb);
   padding: 0 5px;
   font-size: 20px;

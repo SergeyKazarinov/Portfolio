@@ -58,4 +58,23 @@
 @import url(../blocks/projects/__link/projects__link.css);
 @import url(../blocks/projects/__scrin/projects__scrin.css);
 
+/* contact */
+@import url(../blocks/contact/contact.css);
+@import url(../blocks/contact/__title/contact__title.css);
+@import url(../blocks/contact/__subtitle/contact__subtitle.css);
+@import url(../blocks/contact/__form/contact__form.css);
 
+/* form */
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__fieldset/form__fieldset.css);
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input/_type/form__input_type_message.css);
+@import url(../blocks/form/__input/_type/form__input_type_error.css);
+@import url(../blocks/form/__input-error/form__input-error.css);
+@import url(../blocks/form/__input-message-error/form__input-message-error.css);
+@import url(../blocks/form/__input-error/_active/form__input-error_active.css);
+
+/* button */
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_type/button_type_submit.css);
+@import url(../blocks/button/_inactive/button_inactive.css);
