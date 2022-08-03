@@ -1,4 +1,5 @@
 .project__item {
+  position: relative;
   max-height: 100px;
   transition: .5s;
   transform: rotateY(35deg) rotateX(35deg) scale(.9);
@@ -8,10 +9,30 @@
   max-height: 150px;
 }
 
+.project__item::after {
+  content: 'Ссылка на GitHub.com';
+  position: absolute;
+  top: 0; right: 0;
+  color: #000;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: rgba(186, 201, 214, 0.9);
+  pointer-events: none; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: .5s;
+}
+
 .project__item:hover {
   max-height: 240px;
   transform: rotateY(0deg) rotateX(0deg) scale(1);
   box-shadow: 0 0 5px rgba(255, 255, 255, .4),
-              0 0 25px rgba(255, 255, 255, .4),
-              0 0 50px rgba(255, 255, 255, .4);
+              0 0 25px rgba(255, 255, 255, .3),
+              0 0 50px rgba(255, 255, 255, .2);
+}
+
+.project__item:hover::after {
+  top: -1em; right: -8em;
+  opacity: 1;
+  transition-delay: .5s;
 }
