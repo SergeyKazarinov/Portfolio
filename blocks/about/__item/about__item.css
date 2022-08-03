@@ -44,10 +44,10 @@ overflow: hidden;
 }
 
 .about__item:hover {
-  transition: .5s box-shadow linear .6s,
-              .5s transform linear .6s,
-              .5s background-color linear .6s,
-              .5s color linear .6s;
+  transition: .25s box-shadow linear .3s,
+              .25s transform linear .3s,
+              .25s background-color linear .3s,
+              .25s color linear .3s;
   background-color: #03e9f4;
   color: #050801;
   box-shadow: 0 0 5px #03e9f4,
@@ -58,14 +58,14 @@ overflow: hidden;
 }
 
 .about__item:hover::before {
-  transition: 0.1s transform linear, 0.1s height linear 0.1s;
+  transition: .05s transform linear, .05s height linear .05s;
   transform: translateX(0);
   height: 100%;
   border-color: #03e9f4;
 }
 
 .about__item:hover::after {
-  transition: 0.1s transform linear 0.2s, 0.1s height linear 0.3s;
+  transition: .05s transform linear .1s, .05s height linear .15s;
   transform: translateX(0);
   height: 100%;
   border-color: #03e9f4;

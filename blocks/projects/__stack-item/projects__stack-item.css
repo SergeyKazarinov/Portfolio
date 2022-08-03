@@ -1,7 +1,12 @@
 .projects__stack-item {
   min-width: 50px;
-  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(5, 5, 6, .3);
+  /* border: 1px solid #fff; */
+  /* box-shadow: -1px -1px 30px 1px rgba(0,0,0,0.22), 1px 1px 10px 1px rgba(0,0,0,0.22); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   padding: 0 5px;
   font-size: 20px;
+  line-height: 1.2;
   text-align: center;
 }

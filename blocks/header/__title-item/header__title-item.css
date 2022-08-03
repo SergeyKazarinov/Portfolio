@@ -1,12 +1,12 @@
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: scale(8) translateZ(-500px) rotateY(720deg);
+    transform: scale(8) translateZ(-500px);
     filter: blur(5px);
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateZ(0) rotateY(0deg);
+    transform: scale(1) translateZ(0);
     filter: blur(0);
     filter: drop-shadow(0 0 0 white);
   }
@@ -16,82 +16,82 @@
   cursor: pointer;
   display: inline-block;
   opacity: 0;
-  animation: animate 2s ease-in-out forwards;
+  animation: animate 1s ease-in-out forwards;
 }
 
 .header__title-item:nth-child(2) {
-  animation-delay: .1s;
+  animation-delay: .05s;
 }
 
 .header__title-item:nth-child(3) {
-  animation-delay: .2s;
+  animation-delay: .1s;
 }
 
 .header__title-item:nth-child(4) {
-  animation-delay: .3s;
+  animation-delay: .15s;
 }
 
 .header__title-item:nth-child(5) {
-  animation-delay: .4s;
+  animation-delay: .2s;
 }
 
 .header__title-item:nth-child(6) {
-  animation-delay: .5s;
+  animation-delay: .25s;
 }
 
 .header__title-item:nth-child(7) {
-  animation-delay: .6s;
+  animation-delay: .3s;
 }
 
 .header__title-item:nth-child(8) {
-  animation-delay: .7s;
+  animation-delay: .35s;
 }
 
 .header__title-item:nth-child(9) {
-  animation-delay: .8s;
+  animation-delay: .4s;
 }
 
 .header__title-item:nth-child(10) {
-  animation-delay: .9s;
+  animation-delay: .4.5s;
 }
 
 .header__title-item:nth-child(11) {
-  animation-delay: 1s;
+  animation-delay: .5s;
 }
 
 .header__title-item:nth-child(12) {
-  animation-delay: 1.1s;
+  animation-delay: .55s;
 }
 
 .header__title-item:nth-child(13) {
-  animation-delay: 1.2s;
+  animation-delay: .6s;
 }
 
 .header__title-item:nth-child(14) {
-  animation-delay: 1.3s;
+  animation-delay: .65s;
 }
 
 .header__title-item:nth-child(15) {
-  animation-delay: 1.4s;
+  animation-delay: .7s;
 }
 
 .header__title-item:nth-child(16) {
-  animation-delay: 1.53s;
+  animation-delay: .75s;
 }
 
 .header__title-item:nth-child(17) {
-  animation-delay: 1.6s;
+  animation-delay: .8s;
 }
 
 .header__title-item:nth-child(18) {
-  animation-delay: 1.7s;
+  animation-delay: .85s;
 }
 
 .header__title-item:nth-child(19) {
-  animation-delay: 1.8s;
+  animation-delay: .9s;
 }
 
 .header__title-item:nth-child(20) {
-  animation-delay: 1.9s;
+  animation-delay: .95s;
 }
 

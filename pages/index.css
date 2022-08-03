@@ -30,7 +30,13 @@
 /* about */
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__grid/about__grid.css);
+@import url(../blocks/about/__grid-item/about__grid-item.css);
+@import url(../blocks/about/__image/about__image.css);
+@import url(../blocks/about/__background-photo/about__background-photo.css);
+@import url(../blocks/about/__background-image/about__background-image.css);
 @import url(../blocks/about/__description/about__description.css);
+@import url(../blocks/about/__description-item/about__description-item.css);
 @import url(../blocks/about/__subtitle/about__subtitle.css);
 @import url(../blocks/about/__list/about__list.css);
 @import url(../blocks/about/__item/about__item.css);

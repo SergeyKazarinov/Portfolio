@@ -47,16 +47,6 @@ const hardSkillsContainerList = new Section (hardSkills, createHardSkills, hardS
 hardSkillsContainerList.renderItems();
 
 /**
- * событие прокручивания страницы для преобразования блока header
- */
-window.addEventListener('scroll', () => {
-  header.classList.toggle('sticky', window.scrollY > 0);
-  // if (!window.scrollY > 0) {
-  //   document.addEventListener('scroll', activeAnimationText);
-  // };
-})
-
-/**
  * Эффект дыма для букв заголовка шапки
  */
 for(let i = 0; i<lettersHeader.length; i++) {
@@ -80,46 +70,59 @@ for (let anchor of anchors) {
     const blockID = anchor.getAttribute('href');
     document.querySelector('' + blockID).scrollIntoView({
       behavior: 'smooth', 
-      block: 'end'
+      block: 'start'
     });
   })
 }
 
-//Анимация текста в секции about
-// const animationText = new ReplaceText (aboutDescriptionSelector);
+/**
+ * событие прокручивания страницы для преобразования блока header
+ */
 
-// animationText.replaceText();
-
-// const animation = anime.timeline({
-//   targets : `.${aboutDescriptionSelector} span`,
-//   easeing : 'easeInOutExpo',
-//   loop : false,
-// });
-
+window.addEventListener('scroll', () => {
+  header.classList.toggle('sticky', window.scrollY > 0);
+  if (!window.scrollY > 0) {
+    document.addEventListener('scroll', activeAnimationText);
+  };
+})
 
 
-// const activeAnimationText = () => {
-//   animation.add({
-//     rotate : () => {
-//       return anime.random(-360,360)
-//     },
-//     translateX : () => {
-//       return anime.random(-500,500)
-//     },
-//     translateY : () => {
-//       return anime.random(-500,500)
-//     },
-//     duration : 500,
-//     delay : anime.stagger(1),
-//   })
-//   if(window.scrollY > 0) {
-//     animation.add({
-//       rotate : 0,
-//       translateX : 0,
-//       translateY : 0,
-//       duration : 5000,
-//       delay : anime.stagger(20),
-//     })
-//     document.removeEventListener('scroll', activeAnimationText);
-//   }
-// }
+// Анимация текста в секции about
+/*
+const animationText = new ReplaceText (aboutDescriptionSelector);
+
+animationText.replaceText();
+
+const animation = anime.timeline({
+  targets : `.${aboutDescriptionSelector} span`,
+  easeing : 'easeInOutExpo',
+  loop : false,
+});
+
+
+
+const activeAnimationText = () => {
+  animation.add({
+    rotate : () => {
+      return anime.random(-360,360)
+    },
+    translateX : () => {
+      return anime.random(-500,500)
+    },
+    translateY : () => {
+      return anime.random(-500,500)
+    },
+    duration : 500,
+    delay : anime.stagger(1),
+  })
+  if(window.scrollY > 0) {
+    animation.add({
+      rotate : 0,
+      translateX : 0,
+      translateY : 0,
+      duration : 5000,
+      delay : anime.stagger(20),
+    })
+    document.removeEventListener('scroll', activeAnimationText);
+  }
+}*/

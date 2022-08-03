@@ -1,0 +1,4 @@
+.about__background-image {
+  background-image: url('../../../Images/about3.jpg');
+  box-shadow: 0 0 50px 50px black inset;
+}
