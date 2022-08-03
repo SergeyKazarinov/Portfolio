@@ -1,6 +1,12 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/body/body.css);
 
+/*mix classes*/
+@import url(../blocks/link/link.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/list/list.css);
+@import url(../blocks/animation/__show-from-left/animation__show-form-left.css);
+
 /*header*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/sticky/sticky.css);
@@ -11,10 +17,31 @@
 @import url(../blocks//header/__title-item/_active/header__title-item_active.css);
 @import url(../blocks/header/__backgournd/header__backgournd.css);
 @import url(../blocks/header/__photo-container/header__photo-container.css);
+@import url(../blocks/header/__photo-phone/header__photo-phone.css);
+@import url(../blocks/header/__photo-background/header__photo-background.css);
 @import url(../blocks/header/__photo/header__photo.css);
 @import url(../blocks/header/__navigation/header__navigation.css);
 @import url(../blocks/header/__list/header__list.css);
 @import url(../blocks/header/__logo/header__logo.css);
+
+/* main */
+@import url(../blocks/main/main.css);
+
+/* about */
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__grid/about__grid.css);
+@import url(../blocks/about/__grid-item/about__grid-item.css);
+@import url(../blocks/about/__image/about__image.css);
+@import url(../blocks/about/__background-photo/about__background-photo.css);
+@import url(../blocks/about/__background-image/about__background-image.css);
+@import url(../blocks/about/__description/about__description.css);
+@import url(../blocks/about/__description-item/about__description-item.css);
+@import url(../blocks/about/__subtitle/about__subtitle.css);
+@import url(../blocks/about/__list/about__list.css);
+@import url(../blocks/about/__item/about__item.css);
+@import url(../blocks/about/__stack/about__stack.css);
+
 
 /* projects */
 @import url(../blocks/projects/projects.css);
@@ -32,8 +59,3 @@
 @import url(../blocks/projects/__scrin/projects__scrin.css);
 
 
-/*mix classes*/
-@import url(../blocks/link/link.css);
-@import url(../blocks/title/title.css);
-@import url(../blocks/list/list.css);
-@import url(../blocks/animation/__show-from-left/animation__show-form-left.css);

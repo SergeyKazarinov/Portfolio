@@ -1,0 +1,16 @@
+.header__photo-background {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 97%;
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+  object-position: 20px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 10%;
+}
+
+.sticky .header__photo-background {
+  opacity: 0;
+}

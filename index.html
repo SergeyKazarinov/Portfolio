@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <title>Portfoli</title>
+  <title>Portfolio</title>
 </head>
 <body class="body">
   
   <header class="header">
     <div class="header__description">
-      <h1 class="title header__title">
+      <h1 class="title header__title" id="home">
         <span class="header__title-item">C</span>
         <span class="header__title-item">е</span>
         <span class="header__title-item">р</span>
@@ -53,24 +54,58 @@
       </h2>
     </div>
     <div class="header__photo-container">
+      <img class="header__photo-phone" src="./Images/phone.png" alt="">
+      <img class="header__photo-background" src="./Images/phone-background.jpg">
       <img class="header__photo" src="./images/Без имени-1.png" alt="Фотография">
     </div>
     <nav class="header__navigation">
       <a class= "link header__logo" href="#">Серегй Казаринов</a>
       <ul class="list header__list">
-        <li class="header__item"><a class="link header__link" href="#">HOME</a></li>
-        <li class="header__item"><a class="link header__link" href="#">ABOUT</a></li>
+        <li class="header__item"><a class="link header__link" href="#home">HOME</a></li>
+        <li class="header__item"><a class="link header__link" href="#about">ABOUT</a></li>
         <li class="header__item"><a class="link header__link" href="#projects">PROJECTS</a></li>
         <li class="header__item"><a class="link header__link" href="#">CONTACT</a></li>
       </ul>
     </nav>
   </header>
+
   <main class="main">
-    <section class="projects">
-      <h2 class="title projects__title" id="projects">Мои проекты</h2>
+    <section class="about" id="about">
+      <h2 class="about__title">Обо мне</h2>
+      <div class="about__grid">
+        <div class="about__grid-item">
+          <h3 class="about__description">
+            Привет, рад видеть тебя на моей странице!
+          </h3>
+          <ul class="list about__description">
+            <li class="about__description-item">Я начинающий web-разработчик.</li>
+            <li class="about__description-item">В настоящее время прохожу обучение в web-разработчика на Яндекс.Практикуме.</li>
+            <li class="about__description-item">Выбрал web-разработку, так как сразу вижу результат своей работы, а также могу постоянно развиваться, как специалист, улучшать свои навыки и изучать новое.</li>
+            <li class="about__description-item">Дополнительно изучаю материалы по web-разработке на различных платформах и сайтах.</li>
+            <li class="about__description-item">Параллельно с учебой работаю на freelance.</li>
+            <li class="about__description-item">В 2014 закончил Пермский Государственный Национальный Исследовательский Университет по специальности "Химия".</li>
+          </ul>
+        </div>
+        <div class="about__grid-item">
+          <div class="about__image about__background-photo"></div>
+        </div>
+        <div class="about__grid-item">
+          <div class="about__image about__background-image"></div>
+        </div>
+        <div class="about__grid-item">
+          <h3 class="title about__subtitle">Languages and Tools</h3>
+          <ul class="list about__list">
+              <!--блок для вставки template hardSkills-->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="title projects__title">Мои проекты</h2>
       <div class="project__flex-container">
         <ul class="list project__list">
-
+          <!--блок для вставки template проектов-->
         </ul>
         <div class="project__description-container">
           <p class="title project__description">
@@ -79,7 +114,7 @@
           </p>
 
           <ul class="list projects__stack">
-
+            <!--блок для вставки стэка из JS-->
           </ul>
 
         </div>
@@ -98,9 +133,15 @@
       <a class="link projects__link" href="https://github.com/SergeyKazarinov/Lubimovka" target="_blank">
         <img class="projects__scrin" src="./Images/Lubimovka.JPG">
       </a>
-
     </li>
   </template>
+
+  <template id="hardSkills">
+      <li class="about__item"><h3 class="title about__stack"></h3></li>
+  </template>
+
+
+  <script src="./utils/anime.min.js"></script>
   <script src="./pages/index.js" type="module"></script>
 </body>
 </html>
