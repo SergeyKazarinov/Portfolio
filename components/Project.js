@@ -25,17 +25,14 @@ export class Project {
 
   #setEventListener = () => {
     this._element.addEventListener('mouseover', () => {
-
-      setTimeout(() => {
-        this._description.classList.add('animation__show-from-left');
-        this._description.textContent = this._data.description;
-        this._data.stack.forEach((item) => {
-          const itemElement = document.createElement('li');
-          itemElement.classList.add('projects__stack-item', 'animation__show-from-left');
-          itemElement.textContent = item;
-          this._stack.append(itemElement);
-        });
-      }, 300)
+      this._description.classList.add('animation__show-from-left');
+      this._description.textContent = this._data.description;
+      this._data.stack.forEach((item) => {
+        const itemElement = document.createElement('li');
+        itemElement.classList.add('projects__stack-item', 'animation__show-from-left');
+        itemElement.textContent = item;
+        this._stack.append(itemElement);
+      });
     })
 
     this._element.addEventListener('mouseout', () => {
@@ -44,9 +41,7 @@ export class Project {
       Array.from(stackList).forEach(item => {
         item.remove();
       })
-      setTimeout(() => {
-        this._description.textContent = this._descriptionProjects;
-      }, 300)
+      this._description.textContent = this._descriptionProjects;
     })
   }
 
