@@ -1,0 +1,8 @@
+.button_inactive {
+  border: 1px solid #808080;
+  background: #fafafa;
+  color: #808080;
+  cursor: default;
+  box-shadow: 0 0 0 0 #808080;
+  animation-play-state: paused;
+}

@@ -7,11 +7,22 @@ import {initialProjects,
   aboutDescriptionSelector,
   hardSkills,
   hardSkillsListSelector,
+  validConfiguration,
+  formContact,
+  submitButton,
 } from '../utils/constants.js';
 import {Section} from '../components/Section.js';
 import {Project} from '../components/Project.js';
 import { HardSkills } from '../components/HardSkills.js';
 import { ReplaceText } from '../components/replaceText.js';
+import { FormValidator } from '../components/formValidators.js';
+
+/**
+ * @const formValidators - экземпляр класса для валидации форм отправки сообщения
+ * @type {Class}
+ */
+const formValidators = new FormValidator(validConfiguration, formContact);
+formValidators.enableValidation();
 
 /**
  * Функция сборки проекта
@@ -86,6 +97,9 @@ window.addEventListener('scroll', () => {
   };
 })
 
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault();
+});
 
 // Анимация текста в секции about
 /*

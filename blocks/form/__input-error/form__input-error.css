@@ -1,0 +1,16 @@
+@keyframes color {
+  50% {
+    color: #fff;
+    text-shadow: 0 0 20px red;
+  }
+}
+.form__input-error {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  color: #CF404D;
+  font-size: 14px;
+  line-height: 1.1;
+  animation: color 6s linear infinite;
+}
