@@ -1,14 +1,11 @@
 .contact {
   position: relative;
   padding: 50px 0;
-  background-image: url('../../Images/about2.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  box-shadow: 0 0 50px 50px black inset;
   z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-
+/* 
 .contact::after {
   content: '';
   background: #000;
@@ -19,4 +16,4 @@
   top: 0;
   bottom: 0;
   z-index: -1;
-}
+} */

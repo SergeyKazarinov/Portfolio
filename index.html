@@ -122,48 +122,93 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="title contact__title">Контакт</h2>
-        <p class="contact__subtitle">Здесь вы можете отправить мне сообщение</p>
-      <form class="form contact__form" novalidate>
-        <fieldset class="form__fieldset">
-          <input 
-            class="form__input form__input_type_name" 
-            type="text" id="input-name" 
-            name="name" 
-            placeholder="Введите ваше имя*"
-            minlength="2"
-            maxlength="20"
-            required
-          >
-          <span class="form__input-error input-name-error"></span>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <input 
-            class="form__input form__input_type_email"
-            type="email" 
-            id="input-email" 
-            name="email" 
-            placeholder="Введите e-mail*" 
-            required
-          >
-          <span class="form__input-error input-email-error"></span>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <textarea 
-            class="form__input form__input_type_message" 
-            type="text" id="input-message" 
-            name="message" 
-            placeholder="Введите сообщение*" 
-            minlength="2"
-            required></textarea>
-          <span class="form__input-error form__input-error_active form__input-message-error input-message-error">* - поля, обязательные для ввода</span>
-        </fieldset>
-        <button class="button button_type_submit button_inactive" name="submit">Отправить</button>
-      </form>
+      <div class="contatn__image">
+      </div>
+      
+      <div class="contatn__form-container">
+          <h2 class="title contact__title">Контакты</h2>
+          <p class="contact__subtitle">Здесь вы можете отправить мне сообщение</p>
+        <form class="form contact__form" novalidate>
+          <fieldset class="form__fieldset">
+            <input 
+              class="form__input form__input_type_name" 
+              type="text" id="input-name" 
+              name="name" 
+              placeholder="Введите ваше имя*"
+              minlength="2"
+              maxlength="20"
+              required
+            >
+            <span class="form__input-error input-name-error"></span>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <input 
+              class="form__input form__input_type_email"
+              type="email" 
+              id="input-email" 
+              name="email" 
+              placeholder="Введите e-mail*" 
+              required
+            >
+            <span class="form__input-error input-email-error"></span>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <textarea 
+              class="form__input form__input_type_message" 
+              type="text" id="input-message" 
+              name="message" 
+              placeholder="Введите сообщение*" 
+              minlength="2"
+              required></textarea>
+            <span class="form__input-error form__input-error_active form__input-message-error input-message-error">* - поля, обязательные для ввода</span>
+          </fieldset>
+          <button class="button button_type_submit button_inactive" name="submit">Отправить</button>
+        </form>
+      </div>
+
+      <ul class="list contact__social-link">
+        <li class="contact__item">
+          <a class="link contact__link" href="https://github.com/SergeyKazarinov" target="_blank">
+            <img class="contact__social-icon" src="./Images/github-icon.svg" alt="Логотип GitHub">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a class="link contact__link" href="https://vk.com/kazarinov092" target="_blank">
+            <img class="contact__social-icon" src="./Images/vk-icon.svg" alt="Логотип Вконтакте">
+            Вконтакте
+          </a>
+        </li>
+        <li>
+          <a class="link contact__link" href="https://www.instagram.com/sergey_kazarinov92" target="_blank">
+            <img class="contact__social-icon" src="./Images/instagram-icon.svg" alt="Логотип Instagram">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a class="link contact__link" href="mailto:kazarinov092@gmail.com" target="_blank">
+            <img class="contact__social-icon" src="./Images/Gmail-icon.svg" alt="Логотип Gmail">
+            kazarinov092@gmail.com
+          </a>
+        </li>
+        <li>
+          <a class="link contact__link" href="tel:7-905-862-5530" target="_blank">
+            <img class="contact__social-icon" src="./Images/phone-icon.svg" alt="Логотип телефона">
+            +7-(905)-862-55-30
+          </a>
+        </li>
+        <li>
+          <a class="link contact__link" href="./files/Сергей_Казаринов_Резюме.pdf" download target="_blank">
+            <img class="contact__social-icon" src="./Images/pdf-icon.svg" alt="Логотип pdj">
+            Скачать резюме
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">
 
+    <p class="footer__copyright">&#169; 2022. Сергей Казаринов</p>
   </footer>
 
   <template id="project">
