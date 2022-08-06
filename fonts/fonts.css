@@ -1,0 +1,11 @@
+@font-face {
+  src: url('./Ramona/Ramona-Light.ttf') format('truetype');
+  font-family: 'Ramona';
+  font-weight: normal;
+}
+
+@font-face {
+  src: url('./Ramona/Ramona-Bold.ttf') format('truetype');
+  font-family: 'Ramona';
+  font-weight: bold;
+}

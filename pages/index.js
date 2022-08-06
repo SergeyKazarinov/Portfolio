@@ -1,5 +1,6 @@
 import {initialProjects,
   header,
+  preloader,
   lettersHeader,
   projectListSelector,
   projectTemplate,
@@ -16,6 +17,13 @@ import {Project} from '../components/Project.js';
 import { HardSkills } from '../components/HardSkills.js';
 import { ReplaceText } from '../components/replaceText.js';
 import { FormValidator } from '../components/formValidators.js';
+
+/**
+ * Событие загрузки страницы
+ */
+// window.addEventListener('load', () => {
+//   preloader.style.display = "none";
+// })
 
 /**
  * @const formValidators - экземпляр класса для валидации форм отправки сообщения
@@ -92,9 +100,9 @@ for (let anchor of anchors) {
 
 window.addEventListener('scroll', () => {
   header.classList.toggle('sticky', window.scrollY > 0);
-  if (!window.scrollY > 0) {
-    document.addEventListener('scroll', activeAnimationText);
-  };
+  // if (!window.scrollY > 0) {
+  //   document.addEventListener('scroll', activeAnimationText);
+  // };
 })
 
 submitButton.addEventListener('click', (e) => {
