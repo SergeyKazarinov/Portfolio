@@ -1,0 +1,32 @@
+.header__link {
+  position: relative;
+  transition: 1s;
+}
+
+.header__link:hover {
+  color: white;
+  font-size: 1.3em;
+}
+
+.header__link::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -15%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s;
+  height: 30px;
+  width: 0;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 255, .5);
+  box-shadow: 0 0 5px rgba(0, 255, 255, .7),
+              0 0 25px rgba(0, 255, 255, .7),
+              0 0 50px rgba(0, 255, 255, .7);
+}
+
+.header__link:hover::after {
+  opacity: 1;
+  width: 130%;
+}

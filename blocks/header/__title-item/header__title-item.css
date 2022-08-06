@@ -8,7 +8,6 @@
     opacity: 1;
     transform: scale(1) translateZ(0);
     filter: blur(0);
-    filter: drop-shadow(0 0 0 white);
   }
 }
 
@@ -52,7 +51,7 @@
 }
 
 .header__title-item:nth-child(10) {
-  animation-delay: .4.5s;
+  animation-delay: .45s;
 }
 
 .header__title-item:nth-child(11) {
