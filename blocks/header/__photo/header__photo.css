@@ -6,11 +6,11 @@
   opacity: 1;
   transition: 1s;
   z-index: 3;
-  transform: scale(0.9) translateY(50px);
+  transform: scale(0.9) translateY(40px);
 }
 
 .header__photo:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .sticky .header__photo {

@@ -17,13 +17,30 @@
   position: relative;
   width: 400px;
   height: 700px;
-  /* overflow: hidden; */
-  align-self: flex-end;
+  align-self: center;
+  overflow-y: hidden;
   animation: photo 4s cubic-bezier(.1,.58,.67,.97);
   transform: translateY(0px);
   transition: .7s;
 }
 
-.sticky .header__photo-container {
-  /* transform: translateY(-250px); */
+@media screen and (max-width: 1180px) {
+  .header__photo-container {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__photo-container {
+    width: 250px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__photo-container{
+    width: 200px;
+    height: 320px;
+  }
 }

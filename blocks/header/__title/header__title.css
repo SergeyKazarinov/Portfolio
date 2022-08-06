@@ -1,4 +1,24 @@
 .header__title {
   color: #fff;
-  font-size: 70px;
+  font-size: 3.7vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__title {
+    font-size: 4.8vw;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header__title {
+    font-size: 6.2vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__title {
+    font-size: 5.8vw;
+    align-self: center;
+  }
 }
