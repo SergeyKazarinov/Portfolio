@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="ru" id="home">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,9 @@
   <title>Portfolio</title>
 </head>
 <body class="body">
-  
+  <div id="progressBar"></div>
+  <div id="scrollPath"></div>
+  <!-- <div class="preloader"></div> -->
   <header class="header">
     <div class="header__description">
       <h1 class="title header__title">
@@ -59,7 +61,7 @@
       <img class="header__photo" src="./images/Без имени-1.png" alt="Фотография">
     </div>
     <nav class="header__navigation">
-      <a class= "link header__logo" href="#" id="home">Серегй Казаринов</a>
+      <a class= "link header__logo" href="#home">Серегй Казаринов</a>
       <ul class="list header__list">
         <li class="header__item"><a class="link header__link" href="#home">Главная</a></li>
         <li class="header__item"><a class="link header__link" href="#about">Обо мне</a></li>
@@ -224,7 +226,7 @@
       <li class="about__item"><h3 class="title about__stack"></h3></li>
   </template>
 
-
+  <script src="./utils/scroll.js"></script>
   <script src="./utils/anime.min.js"></script>
   <script src="./pages/index.js" type="module"></script>
 </body>

@@ -102,6 +102,12 @@ export const validConfiguration = {
 };
 
 /**
+ * @const preloader - DOM-элемент загрузки страницы
+ * @type {DOMElement}
+ */
+export const preloader = document.querySelector('.preloader');
+
+/**
  * @const formContact - форма для отравки сообщения
  * @type {DOMElement}
  */
