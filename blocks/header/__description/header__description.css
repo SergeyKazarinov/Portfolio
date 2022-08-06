@@ -13,6 +13,7 @@
 .header__description {
   display: flex;
   flex-direction: column;
+  gap: 25px;
   opacity: 1;
   transition: 1s;
   animation: shadow 1s 1.5s linear;

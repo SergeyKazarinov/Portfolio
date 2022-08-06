@@ -26,3 +26,17 @@
   bottom: 0;
   z-index: -1;
 }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    justify-content:center;
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .header {
+    gap: 40px;
+  }
+}
