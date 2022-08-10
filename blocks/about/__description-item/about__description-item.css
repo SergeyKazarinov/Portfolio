@@ -3,5 +3,23 @@
   background-image: url('../../../Images/list-style-type.png');
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 20px;
+  background-size: 1.3vw;
+}
+
+@media screen and (max-width: 1180px) {
+  .about__description-item {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__description-item {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__description-item {
+    padding-left: 10px;
+  }
 }

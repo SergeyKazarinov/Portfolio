@@ -5,3 +5,15 @@
   gap: 10px;
   transform-style: preserve-3d;
 }
+
+@media screen and (max-width: 1000px) {
+  .projects__stack {
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects__stack {
+
+  }
+}

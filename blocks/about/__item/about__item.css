@@ -70,3 +70,15 @@ overflow: hidden;
   height: 100%;
   border-color: #03e9f4;
 }
+
+@media screen and (max-width: 1000px) {
+  .about__item {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__item {
+    font-size: 2.1vw;
+  }
+}

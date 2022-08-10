@@ -4,3 +4,11 @@
   font-size: 3.5vw;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 550px) {
+  .about__subtitle {
+    font-size: 6vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,5 +1,11 @@
 .about__title {
   color: #fff;
   text-align: center;
-  font-size: 62px;
+  font-size: 6vw;
+}
+
+@media screen and (max-width: 550px) {
+  .about__title {
+    font-size: 8vw;
+  }
 }

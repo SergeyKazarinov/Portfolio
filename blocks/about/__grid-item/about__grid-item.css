@@ -1,3 +1,9 @@
 .about__grid-item {
+  
+}
 
+@media screen and (max-width: 550px) {
+  .about__grid-item:nth-child(4) {
+    grid-row-start: 3;
+  }
 }
