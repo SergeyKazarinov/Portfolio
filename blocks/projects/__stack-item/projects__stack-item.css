@@ -6,7 +6,20 @@
   box-shadow: 0 0 0 60px rgba(0,0,0,.4) inset;
   background: linear-gradient(#1f74eb, #3880f4 48%, #0212ea 52%, #371feb);
   padding: 0 5px;
-  font-size: 20px;
+  font-size: 1.1vw;
   line-height: 1.2;
   text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+  .projects__stack-item {
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects__stack-item {
+    font-size: 2.1vw;
+  }
+}
+

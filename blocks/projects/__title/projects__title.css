@@ -1,5 +1,11 @@
 .projects__title {
   text-align: center;
   color: #fff;
-  font-size: 62px;
+  font-size: 6vw;
+}
+
+@media screen and (max-width: 550px) {
+  .projects__title {
+    font-size: 8vw;
+  }
 }

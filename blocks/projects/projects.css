@@ -1,7 +1,16 @@
 .projects {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url('../../images/backgournd.jpg');
+  background-image: url("../../images/backgournd.jpg");
   box-shadow: 0 0 400px 20px #000 inset;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .projects {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 550px) {
 }

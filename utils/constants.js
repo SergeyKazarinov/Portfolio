@@ -51,7 +51,7 @@ export const initialProjects = [
   },
   {
     name: 'Начать учиться',
-    link: 'https://github.com/SergeyKazarinov/russian-travel',
+    link: 'https://github.com/SergeyKazarinov/how-to-learn',
     description: 'Это типовой одностраничный сайт. В проекте использован: Flexbox, методология БЭМ, Nested BEM, Inline frame и видео-теги, анимация и keyframes.',
     stack: [
       'HTML', 

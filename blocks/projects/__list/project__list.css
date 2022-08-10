@@ -4,3 +4,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 1000px) {
+  .project__list {
+    gap: 10px;
+    margin: 0 30px;
+  }
+}

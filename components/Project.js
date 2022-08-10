@@ -1,8 +1,8 @@
 /**
  * Базовый класс добавления проекта на страницу
  * @class
- * @property {Array} Project._data                   - Массив данных проектов
- * @property {HTMLElement} Project._projectTemplate  - DOM-узел для заполнения информации проекта
+ * @property {Array} Project.data                   - Массив данных проектов
+ * @property {HTMLElement} Project.projectTemplate  - DOM-узел для заполнения информации проекта
  */
 export class Project {
       /**
@@ -10,50 +10,59 @@ export class Project {
    * @param {Array} data                  - Массив данных проектов
    * @param {HTMLElement} projectTemplate - DOM-узел для заполнения информации проекта
    */
+  #data
+  #projectTemplate
+  #descriptionProjects
+  #description
+  #stack
+  #link
+  #scrin
+  #nameProject
+  #element
   constructor (data, projectTemplate) {
-    this._data = data;
-    this._projectTemplate = projectTemplate;
-    this._descriptionProjects = 'Проекты реализованы во время обучения на курсе Web-разработчки Яндекс.Практикум, а также дополнительные релевантные проекты, которые не входят в программу курска.';
-    this._description = document.querySelector('.project__description');
-    this._stack = document.querySelector('.projects__stack');
+    this.#data = data;
+    this.#projectTemplate = projectTemplate;
+    this.#descriptionProjects = 'Проекты реализованы во время обучения на курсе Web-разработчки Яндекс.Практикум, а также дополнительные релевантные проекты, которые не входят в программу курска.';
+    this.#description = document.querySelector('.project__description');
+    this.#stack = document.querySelector('.projects__stack');
   }
 
   #getTemplate = () => {
-    const projectTemplate = this._projectTemplate.cloneNode(true);
+    const projectTemplate = this.#projectTemplate.cloneNode(true);
     return projectTemplate;
   }
 
   #setEventListener = () => {
-    this._element.addEventListener('mouseover', () => {
-      this._description.classList.add('animation__show-from-left');
-      this._description.textContent = this._data.description;
-      this._data.stack.forEach((item) => {
+    this.#element.addEventListener('mouseover', () => {
+      this.#description.classList.add('animation__show-from-left');
+      this.#description.textContent = this.#data.description;
+      this.#data.stack.forEach((item) => {
         const itemElement = document.createElement('li');
         itemElement.classList.add('projects__stack-item', 'animation__show-from-left');
         itemElement.textContent = item;
-        this._stack.append(itemElement);
+        this.#stack.append(itemElement);
       });
     })
 
-    this._element.addEventListener('mouseout', () => {
-      this._description.classList.remove('animation__show-from-left');
+    this.#element.addEventListener('mouseout', () => {
+      this.#description.classList.remove('animation__show-from-left');
       const stackList = document.querySelectorAll('.projects__stack-item');
       Array.from(stackList).forEach(item => {
         item.remove();
       })
-      this._description.textContent = this._descriptionProjects;
+      this.#description.textContent = this.#descriptionProjects;
     })
   }
 
   generateProject() {
-    this._element = this.#getTemplate();
-    this._link = this._element.querySelector('.projects__link');
-    this._scrin = this._element.querySelector('.projects__scrin');
-    this._nameProject = this._element.querySelector('.projects__name');
-    this._link.href = this._data.link;
-    this._scrin.src = this._data.scrin;
-    this._nameProject = this._data.name;
+    this.#element = this.#getTemplate();
+    this.#link = this.#element.querySelector('.projects__link');
+    this.#scrin = this.#element.querySelector('.projects__scrin');
+    this.#nameProject = this.#element.querySelector('.projects__name');
+    this.#link.href = this.#data.link;
+    this.#scrin.src = this.#data.scrin;
+    this.#nameProject = this.#data.name;
     this.#setEventListener();
-    return this._element;
+    return this.#element;
   }
 }
