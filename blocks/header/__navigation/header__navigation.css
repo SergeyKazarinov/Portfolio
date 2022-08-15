@@ -1,0 +1,15 @@
+.header__navigation {
+  width: 100%;
+  position: fixed;
+  top: 30px;
+  right: 0;
+  color: white;
+  transform: translateY(-100px);
+  transition: 1s .2s;
+  opacity: 0;
+}
+
+.sticky .header__navigation {
+  transform: translateY(0);
+  opacity: 1;
+}

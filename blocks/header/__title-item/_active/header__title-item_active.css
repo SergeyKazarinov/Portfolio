@@ -1,0 +1,31 @@
+@keyframes smoke {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  10% {
+    opacity: 1;
+    pointer-events: none;
+  }
+  50% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(300px, -300px) rotate(720deg) scale(4);
+  }
+  80% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+.header__title-item_active {
+  opacity: 1;
+  animation: smoke 3s ease-in-out forwards;
+}

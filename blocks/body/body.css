@@ -1,0 +1,59 @@
+.body {
+  min-width: 320px;
+  /* max-width: 1440px; */
+  /* min-height: 100vh; */
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-color: #000;
+  font-family: 'Ramona', sans-serif;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .05);
+  z-index: 10;
+}
+
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  z-index: 10;
+}
+
+#progressBar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+#progressBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(20px);
+}

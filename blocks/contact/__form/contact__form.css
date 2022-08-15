@@ -1,0 +1,7 @@
+.contact__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 40px;
+  box-sizing: border-box;
+}

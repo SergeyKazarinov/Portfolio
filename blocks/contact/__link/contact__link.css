@@ -1,0 +1,31 @@
+@keyframes anime {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  30% {
+    transform: rotateZ(15deg);
+  }
+
+  70% {
+    transform: rotateZ(-15deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.contact__link {
+  transition: .5s;
+}
+
+.contact__link:hover {
+  text-shadow: 0 0 10px blue,
+               0 0 30px blue,
+               0 0 60px blue;
+}
+
+.contact__link:hover .contact__social-icon {
+  animation: anime .5s linear infinite;
+}
